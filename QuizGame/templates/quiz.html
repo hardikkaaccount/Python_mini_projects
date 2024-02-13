@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Quiz</h1>
+        <form id="quizForm" action="{{ url_for('quiz') }}" method="post">
+            <p>{{ question.question }}</p>
+            {% for option in question.options %}
+            <input type="radio" id="{{ option }}" name="answer" value="{{ option }}">
+            <label for="{{ option }}">{{ option }}</label><br>
+            {% endfor %}
+            <button type="button" onclick="validateForm()" class="btn btn-submit">Submit</button>
+            <div id="errorMessage" class="error-message"></div>
+        </form>
+    </div>
+
+    <script>
+        function validateForm() {
+            var radios = document.getElementsByName('answer');
+            var isChecked = false;
+            for (var i = 0; i < radios.length; i++) {
+                if (radios[i].checked) {
+                    isChecked = true;
+                    break;
+                }
+            }
+            if (!isChecked) {
+                document.getElementById('errorMessage').innerHTML = 'Please select an option.';
+                return false;
+            }
+            document.getElementById('quizForm').submit();
+        }
+    </script>
+</body>
+</html>
