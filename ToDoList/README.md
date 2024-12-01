@@ -48,7 +48,7 @@ The **To-Do List Application** offers users a straightforward interface to manag
 1. **Clone the Repository**:
    ```bash
    git clone https://github.com/hardikkaaccount/Python_mini_projects.git
-   cd Python-Mini-Projects/todo_app
+   cd Python_mini_projects/ToDoList
 
 Simple Flask Todo App using SQLAlchemy and SQLite database.
 
