@@ -24,3 +24,15 @@ The **Colorful Calculator** is a GUI-based Python application. It supports basic
 ## 🔧 Technologies Used  
 - **Programming Language**: Python (v3.x).  
 - **GUI Library**: `tkinter`.  
+
+## 📂 How to Run the Project  
+1. Clone the repository:  
+   ```bash
+   git clone https://github.com/hardikkaaccount/Python_mini_projects.git
+   cd Python-Mini-Projects/calculator
+
+2. run the file
+   ```bash
+     python calculator.py
+
+
