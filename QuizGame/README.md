@@ -38,4 +38,4 @@ The **Quiz Game** offers a series of multiple-choice questions on a variety of t
 1. **Clone the Repository**:
    ```bash
    git clone https://github.com/hardikkaaccount/Python_mini_projects.git
-   cd Python-Mini-Projects/quiz_game
+   cd Python-Mini-Projects/quizgame
