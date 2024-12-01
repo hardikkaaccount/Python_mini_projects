@@ -24,5 +24,5 @@ This repository contains small yet powerful Python projects, each focusing on di
 ## 📂 How to Use  
 1. Clone this repository:  
    ```bash
-   git clone https://github.com/yourusername/Python-Mini-Projects.git
+   git clone https://github.com/hardikkaaccount/Python_mini_projects.git
    cd Python-Mini-Projects
